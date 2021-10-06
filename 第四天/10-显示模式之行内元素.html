@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素</title>
+    <!-- 行内元素也称内联元素  
+    特点：1. 相邻行内元素一行可以显示多个
+          2. 高和宽直接设置是无效的
+           3. 默认宽度即本身内容宽度
+            4. 行内元素只能容纳文本或其他行内元素   -->
+    <style>
+        span {
+            width: 110px;
+            height: 110px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <span>pink老师你怎么穿着品如的衣服</span>  <strong>pink老师</strong>
+    <span>品如的衣服</span>  <strong>pink老师</strong>
+    <!-- 注意：链接里不能再放链接
+    特殊情况a；里面可放块级元素，但需给a转换块级模式最安全 -->
+    <!-- 块级元素像男人，行内元素像女人 -->
+</body>
+</html>

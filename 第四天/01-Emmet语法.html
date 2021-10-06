@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet语法</title>
+    <!-- CSS基本采取简写即可 :
+         w200 按tab 可生成width: 200px
+        lh 按tab 可生成line-height: 20px; -->
+    <style>
+        .one{
+            text-align: center;
+            /* tac 加tab键 */
+            /* text-align: center; */
+            /* ti 加tab */
+            text-indent: 2em;
+            width: 200px;
+            height: 200px;
+            /* ti2em加tab */
+            text-indent: 2em;
+            /* lh26px */
+            line-height: 26px;
+            /* tdnone加tab */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 生成标签 输入标签名按tab键 如 div 再tab键 得<div></div>
+    2. 想得多个相同标签，用*\ 如 div*3 就可得3个div
+    3. 父子关系 用> 如ul>ol 
+    4. 如果生成类名或者id名，直接.demo 或者#two tab键就行
+    5. 若生成有顺序的div 可用$ 
+    6. 兄弟关系 用+ 如 dix+p 
+    7. 想在生成标签内部写内容可用{}表示-->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <table></table>
+    <ul>
+        <li></li>
+    </ul>
+    <div><span></span></div>
+    <div></div>
+    <p></p>
+    <div class="nav"></div>
+    <!-- .nav -->
+    <div class="nav"></div>
+    <!-- .banner -->
+    <div id="banner"></div>
+    <!-- p.one -->
+    <p class="one"></p>
+    <!-- span.gray -->
+    <span class="gary"></span>
+    <!-- ul>li#two -->
+    <ul>
+        <li id="two"></li>
+    </ul>
+    <!-- .demo$*5 -->
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <div class="demo5"></div>
+    <!-- 想生成的标签里默认显示几个文字 -->
+    <!-- div{pink老师不是猪}  再按tab键-->
+    <div>pink老师不是猪</div>
+    <!-- div{我不喜欢男人}*5 -->
+    <div>我不喜欢男人</div>
+    <div>我不喜欢男人</div>
+    <div>我不喜欢男人</div>
+    <div>我不喜欢男人</div>
+    <div>我不喜欢男人</div>
+    <!-- div{$}*5 -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+
+</body>
+</html>
